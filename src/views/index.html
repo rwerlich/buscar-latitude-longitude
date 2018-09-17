@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>API-Maps</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://localhost/api-maps/src/views/assets/css/bootstrap.min.css">
+</head>
+<body class="container">
+
+<nav class="navbar navbar-light bg-light justify-content-between">
+    <img class="navbar-brand" src="http://localhost/api-maps/src/views/assets/img/maps-api.png"  width="300px">
+    <a href="http://localhost/api-maps/api/list?export=true" target="_blank" class="btn btn-outline-success my-2 my-sm-0">Exportar Relatório</a>
+</nav>
+
+
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="text-center">Busca</h4>
+
+        <form method="POST" action="" id="form">
+            <div class="form-group">
+                <label for="street">Rua</label>
+                <input id="street" type="text" class="form-control" name="street" value="" required autofocus>
+            </div>
+            <div class="form-group">
+                <label for="district">Bairro
+                </label>
+                <input id="district" type="text" class="form-control" name="district">
+            </div>
+            <div class="form-group">
+                <label for="number">Número</label>
+                <input id="number" type="number" class="form-control" name="number">
+            </div>
+            <div class="form-group">
+                <label for="zip-code">CEP
+                </label>
+                <input id="zip-code" type="text" class="form-control" name="zipCode">
+            </div>
+            <div class="form-group">
+                <label for="city">Cidade</label>
+                <input id="city" type="text" class="form-control" name="city" value="" required>
+            </div>
+            <div class="form-group no-margin">
+                <button type="submit" class="btn btn-primary btn-block">
+                    Realizar Busca
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div style="display: none" id="msgSuccess" class="alert alert-success" role="alert">
+
+</div>
+<div style="display: none" id="msgError" class="alert alert-danger" role="alert">
+
+</div>
+
+<footer class="text-center">
+    Copyright &copy; 2018 &mdash; Rodrigo Werlich
+</footer>
+
+<script src="http://localhost/api-maps/src/views/assets/js/app.js"></script>
+
+</body>
+</html>
